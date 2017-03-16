@@ -52,7 +52,7 @@ public class BlackJack extends Application {
         Scene scene1 = new Scene(hitButton, 200, 250);
         Scene scene2 = new Scene(holdButton, 400, 250);
         
-        primaryStage.setTitle("Player Choice");
+        primaryStage.setTitle("Player Choice1");
         primaryStage.setScene(scene1);
         primaryStage.show();
     }
