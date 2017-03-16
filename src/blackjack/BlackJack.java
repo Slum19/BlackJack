@@ -23,7 +23,7 @@ public class BlackJack extends Application {
     //here...
     public void start(Stage primaryStage) {
         Button hit = new Button();
-        hit.setText("Hit Me");
+        hit.setText("Hit Me baby one more time");
         hit.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
