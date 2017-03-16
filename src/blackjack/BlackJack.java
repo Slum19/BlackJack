@@ -24,7 +24,7 @@ public class BlackJack extends Application {
     public void start(Stage primaryStage) {
             //creates a button that gives a player a random card
         Button hit = new Button();
-        hit.setText("Hit Me");
+        hit.setText("Hit Me baby one more time");
         hit.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
