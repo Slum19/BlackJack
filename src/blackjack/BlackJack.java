@@ -24,7 +24,7 @@ public class BlackJack extends Application {
     public void start(Stage primaryStage) {
             //creates a button that gives a player a random card
         Button hit = new Button();
-        hit.setText("Hit Me baby one more time");
+        hit.setText("Hit Me");
         hit.setOnAction(new EventHandler<ActionEvent>() {
             
             @Override
@@ -32,7 +32,7 @@ public class BlackJack extends Application {
                //gives player a random card
             }
         });
-            //creates a button that gives a player a random card
+            //creates a button that ends player turn
         Button hold = new Button();
         hold.setText("Hold");
         hold.setOnAction(new EventHandler<ActionEvent>() {
@@ -44,17 +44,15 @@ public class BlackJack extends Application {
             }
         });
         
-        StackPane hitButton = new StackPane();
-        StackPane holdButton = new StackPane();
-        hitButton.getChildren().add(hit);
-        holdButton.getChildren().add(hold);
-        
-        Scene scene1 = new Scene(hitButton, 200, 250);
-        Scene scene2 = new Scene(holdButton, 400, 250);
-        
-        primaryStage.setTitle("Player Choice1");
-        primaryStage.setScene(scene1);
-        primaryStage.show();
+        StackPane root = new StackPane();
+    hit.setLayoutX(250);
+    hit.setLayoutY(250);
+    root.getChildren().add(hit);
+    hold.setLayoutX(500);
+    hold.setLayoutY(500);
+    root.getChildren().add(hold);
+    primaryStage.setScene(new Scene(root, 1024, 768));
+    primaryStage.show();
     }
 
     /**
